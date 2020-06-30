@@ -22,6 +22,7 @@ def copy_file(src,dst):
 	copy sucessfully	"""
 	name=shutil.copy(src, dst)
 	if(os.path.isfile(name)):
+		os.remove(name)
 		return True
 	else:
 		return False
@@ -44,4 +45,4 @@ if __name__ == '__main__':
 #	print(copy_file("test.txt","copytest.txt"))#copy file to file
 	print(copy_file("test.txt","copytest.txt"))#work on linux. copy file in parent folder.
 #	move_rename_file("copytest.txt","movetest.txt")
-	move_rename_file("movetest.txt","../movetest.txt")
+#	move_rename_file("movetest.txt","../movetest.txt")

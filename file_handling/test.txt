@@ -1,0 +1,7 @@
+This is how you create a new text file.
+A line is adding in exsiting file.
+
+	here 
+	is 
+	more text
+	
