@@ -18,10 +18,11 @@ if __name__ == '__main__':
 		t = threading.Thread(name=i,target=threadname,args=list_data)	
 		if(i==2):
 			t.setDaemon(True)
-
-		t.start()
+			t.start()
+		else:
+			t.start()
 
 	
-	sys.exit("Age less than 18")
+	sys.exit("Hard reset")
 	print("main loop exit")
 
